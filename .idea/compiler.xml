@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="apigateway" />
+        <module name="lib-account-core-cqrs" />
+        <module name="account-cmd-service" />
+        <module name="userservice" />
+        <module name="discoveryserver" />
+        <module name="lib-account-common" />
+        <module name="configserver" />
+        <module name="account-qry-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-cmd-service" options="-parameters" />
+      <module name="account-qry-service" options="-parameters" />
+      <module name="apigateway" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="discoveryserver" options="-parameters" />
+      <module name="lib-account-common" options="-parameters" />
+      <module name="lib-account-core-cqrs" options="-parameters" />
+      <module name="userservice" options="-parameters" />
+    </option>
+  </component>
+</project>
